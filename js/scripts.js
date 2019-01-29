@@ -19,6 +19,6 @@ $(document).ready(function() {
     event.preventDefault();
     list.addItem($("#userInput").val());
     console.log(list);
-
+    $("#output").html("<li>" + '<input type="checkbox">' + list.tasks + "</li>" + "<br/>")
   });
 });
